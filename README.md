@@ -15,11 +15,11 @@ if (b != 0) {
 return (double) a / b;
 } else {
 System.out.println(&quot;Cannot divide by zero!&quot;);
-return Double.NaN; // NaN (Not a Number) for an undefined result
+return Double.NaN; 
 }
 }
 }
-// MathUtils class in the math_operations package
+
 package math_operations;
 public class MathUtils {
 public double calculateSquareRoot(double num) {
@@ -27,23 +27,23 @@ if (num &gt;= 0) {
 return Math.sqrt(num);
 } else {
 System.out.println(&quot;Cannot calculate square root of a negative number!&quot;);
-return Double.NaN; // NaN (Not a Number) for an undefined result
+return Double.NaN;
 
 }
 }
 }
-// Main class for testing the math operations package
+
 public class MathOperationsApp {
 public static void main(String[] args) {
-// Create instances from the math_operations package
+
 math_operations.Calculator calculator = new math_operations.Calculator();
 math_operations.MathUtils mathUtils = new math_operations.MathUtils();
-// Perform basic mathematical operations
+
 System.out.println(&quot;Addition: &quot; + calculator.add(5, 3));
 System.out.println(&quot;Subtraction: &quot; + calculator.subtract(8, 4));
 System.out.println(&quot;Multiplication: &quot; + calculator.multiply(2, 6));
 System.out.println(&quot;Division: &quot; + calculator.divide(10, 2));
-// Calculate square root
+
 System.out.println(&quot;Square Root: &quot; + mathUtils.calculateSquareRoot(25));
 System.out.println(&quot;Square Root of -9: &quot; + mathUtils.calculateSquareRoot(-9));
 }
